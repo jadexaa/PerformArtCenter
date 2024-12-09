@@ -1,0 +1,128 @@
+/* Prevent adjustments of font size after orientation changes.  */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  height: 100%;
+}
+
+/*---- apply a natural box layout model to all elements -------*/
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  height: 100%;
+  font-family: $defaultFont;
+  font-weight: $normalWeight;
+  color: $secondaryColor;
+}
+
+#headerWrapper {
+  background-color: $secondaryColor;
+  color: #fff;
+}
+
+header {
+  display: flex;
+  align-items: flex-end;
+  padding: 1rem $gutter;
+  gap: 8px;
+  h1 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: $lightWeight;
+  }
+}
+
+#navWrapper {
+  background-color: green;
+}
+
+nav {
+  ul {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0;
+  }
+
+  ul li {
+    margin: 0;
+    padding: 0.9 rem 2vw;
+  }
+
+  ul li a {
+    padding: 0.9rem;
+    color: white;
+    display: block;
+    border-top: solid 1px green
+    background-color black;
+    text-decoration: none;
+  }
+
+  /* Optional: Add hover effect */
+  ul li a:hover {
+    background-color: #e67e22; /* A darker shade for hover effect */
+  }
+
+  ul li.active a {
+    background-color: orange
+  }
+}
+
+header{
+  display: flex;
+  align-items: flex-end;
+  padding: 0.5rem $gutter;
+  gap: 10px;
+  h1 {
+      margin: 0;
+      font-size: 1.3rem;
+      font-weight: $normalWeight;
+      justify-content: space-between;
+      text-align: center;
+  }
+  p {
+    margin: 0;
+      font-size: 16px;
+      font-weight: $boldWeight;
+      margin-left: auto;
+  }
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+section div{
+  width: 100%;
+  padding: 0rem 1rem 1rem 1rem;
+  img{width: 100%;
+  height: auto;
+  border-radius: 0px 0px 30px 30px;}
+  h2 {
+    background-color: orange;
+    color: white;
+    padding: 1rem;
+    border-radius: 30px 30px 0px 0px;
+    text-align: center;
+    margin: 0;
+  }
+}
+
+
+//footer or bottom stuff
+#footerWrapper{
+    background-color: white;
+}
+
+footer{
+    padding: .5rem $gutter;
+    color: #000;
+    p{
+        margin: 0;
+        font-weight: $boldWeight;
+        text-align: center;
+    }
+  }

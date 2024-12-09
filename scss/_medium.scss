@@ -1,0 +1,17 @@
+nav {
+    ul {
+        display:flex;
+        justify-content: space-between;
+        padding: 1rem $gutter;
+
+    }
+    ul li a {
+        border: black;
+    }
+    }
+
+    main {
+        section {
+            grid-template: 1fr 1fr 1fr;
+        }
+    }
